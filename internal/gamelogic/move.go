@@ -87,6 +87,7 @@ func (gs *GameState) CommandMove(words []string) (ArmyMove, error) {
 		Units:      newUnits,
 		Player:     gs.GetPlayerSnap(),
 	}
+	
 	fmt.Printf("Moved %v units to %s\n", len(mv.Units), mv.ToLocation)
 	return mv, nil
 }
